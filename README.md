@@ -2,13 +2,12 @@
 
 A modern and responsive landing page built with **React + Vite**, inspired by an online language learning platform.  
 This project focuses on clean UI, component-based structure, responsive design, and smooth animations.
----
 
-## 🎨 Design Credit
+## 🎨 Design Reference
 
-The UI design of this project is inspired by a Figma community design.
-The main goal of this project was to practice React component structure,
-responsive layout, and animations using Framer Motion.
+This landing page was built based on a Figma design.
+The design was used as a reference for educational purposes.
+All code and implementation were done independently.
 ---
 
 ## 🚀 Live Demo
