@@ -1,0 +1,35 @@
+/* Css Variables  */
+:root {
+  --primary-color: #263238;
+  --white-color: #ffffff;
+  --dark-color: #000000;
+  --text-color: #8f95a5;
+
+  --f-size-large: 64px;
+  --f-size-medium: 48px;
+  --f-size-xmedium: 36px;
+  --f-size-xxmedium: 33px;
+  --f-size-small: 24px;
+  --f-size-xsmall: 20px;
+  --f-size-xxsmall: 14px;
+}
+/* Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/* Container */
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 2%;
+}

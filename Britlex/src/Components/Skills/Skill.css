@@ -1,0 +1,148 @@
+.skill {
+  padding: 2rem 0;
+}
+
+.skill_subtitle {
+  font-size: var(--f-size-medium);
+  color: var(--dark-color);
+  text-align: center;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+/* GRID */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-item.tall {
+  grid-row: span 2;
+}
+
+.card-item.wide {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-item {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.card-item h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.card-item p {
+  color: var(--text-color);
+  margin: 1rem 0 2rem 0;
+  max-width: 85%;
+  font-size: var(--f-size-xxsmall);
+  line-height: 25px;
+  flex-grow: 1;
+}
+
+.card-item img {
+  width: 100%;
+  height: 293px;
+  object-fit: contain;
+}
+
+.card-item button {
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: var(--f-size-xxsmall);
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+.card-item button:hover {
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.card-item button:active {
+  transform: scale(0.9);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .skill-grid {
+    grid-template-columns: 370px 1fr 1fr;
+  }
+
+  .card-item p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .skill-grid {
+    grid-template-columns: 340px 1fr 1fr;
+  }
+
+  .card-item.wide img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skill_subtitle {
+    font-size: var(--f-size-xmedium);
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-grid h2 {
+    font-size: var(--f-size-xsmall);
+  }
+
+  .card-item.wide img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-item {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .card-item.tall {
+    grid-row: span 1;
+  }
+
+  .card-item.wide {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .card-item.wide button {
+    width: 100%;
+  }
+
+  .card-item.wide img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+}
