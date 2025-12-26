@@ -10,8 +10,8 @@ The design was used as a reference for educational purposes.
 All code and implementation were done independently.
 ---
 
-## 🚀 Live Demo
-Coming soon!
+## 🚀 Live Demo:
+(https://britlex-landing-page.netlify.app/)
 ---
 
 ## 🛠 Tech Stack
